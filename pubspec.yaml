@@ -1,0 +1,36 @@
+name: app_ex
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.18.6 <3.0.0'
+
+dependencies: 
+  animations: ^2.0.7
+  http: ^0.13.5
+  cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.4.0
+  carousel_slider: ^4.2.1
+  cupertino_tabbar: ^2.0.0
+  xml: ^6.2.2
+  qr_flutter: ^4.0.0
+  get: 4.6.5
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+  
+  assets:
+    - assets/icons/icon.png
+    - assets/qrcode/qrcode.png
+    - assets/icons/DISKON 10% feed.jpg
+    - assets/image/LANDING PAGE BLIBLI w HIPPO.png
+    - assets/image/LANDING PAGE BLIBLI w MEE.png
+    - assets/image/LANDING PAGE SHOPEE w HIPPO.png
+    - assets/image/LANDING PAGE TOKPED w MEE.png
