@@ -1,23 +1,51 @@
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../../../../network/api.dart';
 
 class LoginController extends GetxController {
-  //TODO: Implement LoginController
+  // var loginProcess = false.obs;
+  // var error = "";
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
+  // Future<String> login({required String email, required String password}) async {
+  //   error = "";
+  //   try {
+  //     loginProcess(true);
+  //     List loginResp = await CQAPI.login(email: email, password: password);
+  //     if (loginResp[0] != "") {
+  //       //success
+  //       final prefs = await SharedPreferences.getInstance();
+  //       prefs.setString("token", loginResp[0]);
+  //     } else {
+  //       error = loginResp[1];
+  //     }
+  //   } finally {
+  //     loginProcess(false);
+  //   }
+  //   return error;
+  // }
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
+  // Future<bool> refresh() async {
+  //   final prefs = await SharedPreferences.getInstance();
+  //   String? token = prefs.getString("token");
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
+  //   if (token == null) {
+  //     return false;
+  //   }
 
-  void increment() => count.value++;
+  //   bool success = false;
+  //   try {
+  //     loginProcess(true);
+  //     List loginResp = await CQAPI.refreshToken(token: token);
+  //     if (loginResp[0] != "") {
+  //       //success
+  //       final prefs = await SharedPreferences.getInstance();
+  //       prefs.setString("token", loginResp[0]);
+  //       success = true;
+  //     }
+  //   } finally {
+  //     loginProcess(false);
+  //   }
+  //   return success;
+  // }
 }
