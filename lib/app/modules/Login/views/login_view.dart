@@ -177,7 +177,7 @@ class LoginView extends GetView<LoginController> {
                     ),
                   ),
                   onPressed: () {
-                    Get.off(DashboardView(), binding: DashboardBinding());
+                    // Get.off(DashboardView(), binding: DashboardBinding());
                     // Get.to(DashboardView());
                   },
                   child: const Text(
